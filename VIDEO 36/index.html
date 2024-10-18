@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Milticolor Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+        /* :root {
+            --primary-color: #555c6b;
+            --text-color: white;
+            --secondary-color: #4dbbb7;
+        } */
+
+        /* :root {
+            --primary-color: #1bb938;
+            --text-color: white;
+            --secondary-color: #a3f49a;
+        } */
+
+        /* :root {
+            --primary-color: #df15c4;
+            --text-color: wheat;
+            --secondary-color: #e3b2f8;
+        } */
+
+        :root {
+            --primary-color: black;
+            --text-color: tomato;
+            --secondary-color: #4e6d6d;
+        }
+
+        body{
+            background-color: var(--secondary-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        nav {
+            /* background-color: black; */
+            background-color: var(--primary-color);
+            /* color: tomato; */
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bold;
+        }
+        
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Services</li></a>
+                <li><a href="/">Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
