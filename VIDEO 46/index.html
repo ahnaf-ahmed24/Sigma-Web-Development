@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            background-color: rgb(33, 95, 95);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            background-color: #915454;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: any2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.01, -0.31, 1, 1.27);
+            animation-delay: 1s;
+            /* animation-direction: reverse; */
+            /* animation-play-state: running; */
+            animation-fill-mode: backwards;
+            /* animation: any1 3s cubic-bezier(0.01, -0.31, 1, 1.27) 1s 1 reverse backwards; */
+        }
+        @keyframes any1 {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(500px);
+            }
+        }
+        @keyframes any2 {
+            0%{
+                transform: rotate(10deg);
+            }
+            10%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            30%{
+                transform: rotate(300deg);
+            }
+            40%{
+                transform: rotate(400deg);
+            }
+            50%{
+                transform: rotate(500deg);
+            }
+            60%{
+                transform: rotate(600deg);
+            }
+            70%{
+                transform: rotate(700deg);
+            }
+            80%{
+                transform: rotate(800deg);
+            }
+            90%{
+                transform: rotate(900deg);
+            }
+            100%{
+                transform: rotate(1000deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
